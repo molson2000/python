@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import os
-from hosts import servers
+import hosts
 host = "ping -c 1 " + hosts.servers
 if os.system(host) == 0:
 	print "host is up"
